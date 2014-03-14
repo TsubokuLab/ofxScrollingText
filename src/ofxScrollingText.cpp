@@ -8,7 +8,7 @@
 #include "ofxScrollingText.h"
 
 //--------------------------------------------------------------
-ofxScrollingText *ofxScrollingText::mIns = 0; // inctance()内の条件式のために初期化
+ofxScrollingText *ofxScrollingText::mIns = 0;
 ofxScrollingText* ofxScrollingText::instance(){
     if(!mIns){
         mIns = new ofxScrollingText();

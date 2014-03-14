@@ -30,14 +30,13 @@ public:
     void setSpeed(float _speed);
     float getSpeed();
     
-    //テロップ再生完了イベント
+    // complete event.
     static ofEvent<void> completeEvent;
     
 private:
-    //シングルトン用にコンストラクタをprivateにして呼べなくする。
     ofxScrollingText();
     ~ofxScrollingText();
-    //シングルトン用インスタンス
+    // private instance
     static ofxScrollingText* mIns;
     
     ofxTrueTypeFontUC font;
